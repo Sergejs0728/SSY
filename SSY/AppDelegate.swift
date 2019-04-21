@@ -5,11 +5,14 @@
 //  Created by Navi on 27/03/2019.
 //  Copyright © 2019 Navi. All rights reserved.
 //
+//com.sewsewyou.SSY1
 
 import UIKit
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
+
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?

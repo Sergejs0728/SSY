@@ -20,14 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Permission needed for taking picture or video</string>
+	<string>Permission needed for taking picture</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>SSY want to use your location service to add your location information on your profile.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>SSY want to use your location service to add your location information on your profile.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app requires to access your photo library to show image on profile </string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Permission needed for saving picture to Camera roll</string>
+	<string>This app requires to access your photo library to show image on profile </string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Muli.ttf</string>
@@ -43,8 +50,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

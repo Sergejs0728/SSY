@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9tw-Wl-vCS">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,18 +67,19 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nq-CN-etO">
                                                         <rect key="frame" x="0.0" y="49" width="315" height="55"/>
+                                                        <color key="backgroundColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="55" id="jRZ-mn-Mca"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
                                                         <state key="normal" title="Login">
-                                                            <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <state key="selected" title="Login">
                                                             <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="jMT-7I-BHD" kind="show" id="rXF-Ik-W0f"/>
+                                                            <segue destination="z6f-qc-94m" kind="push" id="eMR-os-coi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -93,9 +94,9 @@
                                                 <rect key="frame" x="0.0" y="109" width="315" height="108.66666666666669"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPm-JI-JFO">
-                                                        <rect key="frame" x="0.0" y="5" width="315" height="55"/>
+                                                        <rect key="frame" x="0.0" y="5" width="315" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="55" id="5qS-uu-SVN"/>
+                                                            <constraint firstAttribute="height" constant="50" id="5qS-uu-SVN"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="Ue2-S8-Tkj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
@@ -103,6 +104,11 @@
                                                         <state key="normal" title="Sign Up">
                                                             <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="Ue2-S8-Tkj"/>
+                                                            </mask>
+                                                        </variation>
                                                         <connections>
                                                             <segue destination="Sc4-Wz-J0u" kind="show" id="Ldj-z7-pSH"/>
                                                         </connections>
@@ -155,6 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cD2-pb-Y8f"/>
                     <connections>
                         <outlet property="btn_login" destination="4Nq-CN-etO" id="HsJ-7c-o53"/>
                         <outlet property="btn_signup" destination="ZPm-JI-JFO" id="apn-dp-d4b"/>
@@ -162,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1074.4000000000001" y="133.00492610837438"/>
         </scene>
         <!--Complete Profile View Controller-->
         <scene sceneID="frb-3C-yQI">
@@ -561,16 +568,17 @@
                                 <rect key="frame" x="0.0" y="608" width="375" height="170"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oTi-sg-mrA">
-                                        <rect key="frame" x="30" y="25" width="315" height="120"/>
+                                        <rect key="frame" x="30" y="30" width="315" height="110"/>
                                         <subviews>
                                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-7Q-HkM">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                                <color key="backgroundColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="1xh-hk-2qj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="1xh-hk-2qj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
                                                 <state key="normal" title="Save">
-                                                    <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <state key="selected">
                                                     <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -580,9 +588,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K8-d9-PeX">
-                                                <rect key="frame" x="0.0" y="65" width="315" height="55"/>
+                                                <rect key="frame" x="0.0" y="60" width="315" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="TUj-pL-Waj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="TUj-pL-Waj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
                                                 <state key="normal" title="Cancel">
@@ -639,7 +647,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjr-LN-OUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="131.52709359605913"/>
+            <point key="canvasLocation" x="1898.4000000000001" y="131.52709359605913"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="LCk-vA-Tfm">
@@ -805,7 +813,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUl-1y-R6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1769" y="132"/>
+            <point key="canvasLocation" x="2711.1999999999998" y="131.52709359605913"/>
         </scene>
         <!--Front View Controller-->
         <scene sceneID="CQa-qh-EUd">
@@ -878,7 +886,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btn_startShooting:" destination="9SY-6k-d6V" eventType="touchUpInside" id="hW1-NP-A5t"/>
-                                    <segue destination="fGN-tV-llW" kind="show" id="kzP-35-OjV"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7h-gR-iPw">
@@ -914,11 +921,12 @@
                     </view>
                     <connections>
                         <outlet property="btn_shoot" destination="ISx-ji-eiN" id="8nV-BV-eOK"/>
+                        <outlet property="photoView" destination="D5G-TE-z9z" id="6zz-46-KjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUW-qY-u6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2489" y="132"/>
+            <point key="canvasLocation" x="3431.1999999999998" y="131.52709359605913"/>
         </scene>
         <!--Side View Controller-->
         <scene sceneID="8ii-1k-abp">
@@ -1031,7 +1039,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilz-34-V99" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3217" y="132"/>
+            <point key="canvasLocation" x="4159.1999999999998" y="131.52709359605913"/>
         </scene>
         <!--Measuring View Controller-->
         <scene sceneID="I9h-Sx-0Pd">
@@ -1185,7 +1193,7 @@ measurements…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SdR-GI-t4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3930" y="132"/>
+            <point key="canvasLocation" x="4871.1999999999998" y="131.52709359605913"/>
         </scene>
         <!--Measurment Completed View Controller-->
         <scene sceneID="HHY-TT-gc3">
@@ -1391,7 +1399,7 @@ your size is</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-Gk-oAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4605.6000000000004" y="131.52709359605913"/>
+            <point key="canvasLocation" x="5548" y="131.52709359605913"/>
         </scene>
         <!--Thankyou View Controller-->
         <scene sceneID="Kll-jo-IjN">
@@ -1535,7 +1543,7 @@ SewSew You profile.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7Y-MA-E0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5280.8000000000002" y="131.52709359605913"/>
+            <point key="canvasLocation" x="6223.1999999999998" y="131.52709359605913"/>
         </scene>
         <!--Phone Picker Delegate-->
         <scene sceneID="XOe-JO-vvq">
@@ -1593,7 +1601,7 @@ SewSew You profile.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbk-vR-fMv">
-                                <rect key="frame" x="0.0" y="114" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the required details to start using the app" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Uod-Y1-BNk">
                                         <rect key="frame" x="30" y="0.0" width="315" height="60"/>
@@ -1612,16 +1620,16 @@ SewSew You profile.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcT-qz-eXd">
-                                <rect key="frame" x="0.0" y="174" width="375" height="434"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="484"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLS-EB-ub5">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="242"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-vv-9W9">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="108.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Aq8-L0-PlQ">
-                                                        <rect key="frame" x="30" y="14.666666666666657" width="315" height="79"/>
+                                                        <rect key="frame" x="30" y="21" width="315" height="79"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-gn-aDf">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
@@ -1633,7 +1641,7 @@ SewSew You profile.</string>
                                                                 <color key="textColor" red="0.55294117649999996" green="0.57647058819999997" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="senior.dev0728@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-tS-jxB" customClass="CustomTextField" customModule="SSY" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-tS-jxB" customClass="CustomTextField" customModule="SSY" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="39" width="315" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="IIy-Qg-uGj"/>
@@ -1657,10 +1665,10 @@ SewSew You profile.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0p-4O-HVm">
-                                                <rect key="frame" x="0.0" y="108.66666666666669" width="375" height="108.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="121" width="375" height="121"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JQJ-LQ-tle">
-                                                        <rect key="frame" x="30" y="14.666666666666629" width="315" height="79"/>
+                                                        <rect key="frame" x="30" y="21" width="315" height="79"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM1-gT-H2c">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
@@ -1675,7 +1683,7 @@ SewSew You profile.</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-xd-cfp">
                                                                 <rect key="frame" x="0.0" y="39" width="315" height="40"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-78-rCc" customClass="NKVPhonePickerTextField" customModule="NKVPhonePicker">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-78-rCc" customClass="NKVPhonePickerTextField" customModule="NKVPhonePicker">
                                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1723,13 +1731,13 @@ SewSew You profile.</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-Tz-Ng3">
-                                        <rect key="frame" x="0.0" y="217" width="375" height="217"/>
+                                        <rect key="frame" x="0.0" y="242" width="375" height="242"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-Pz-4or">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="108.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Dz6-fu-nd1">
-                                                        <rect key="frame" x="30" y="14.666666666666686" width="315" height="79"/>
+                                                        <rect key="frame" x="30" y="21" width="315" height="79"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wA-2z-tmn">
                                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
@@ -1744,7 +1752,7 @@ SewSew You profile.</string>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24g-Pf-0Yk">
                                                                 <rect key="frame" x="0.0" y="39" width="315" height="40"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0h4-FR-c9g" customClass="CustomTextField" customModule="SSY" customModuleProvider="target">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0h4-FR-c9g" customClass="CustomTextField" customModule="SSY" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="40"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="14"/>
@@ -1775,10 +1783,10 @@ SewSew You profile.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QH6-7p-Jji">
-                                                <rect key="frame" x="0.0" y="108.66666666666669" width="375" height="108.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="121" width="375" height="121"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fZc-Y5-N8C">
-                                                        <rect key="frame" x="30" y="14.666666666666686" width="315" height="79"/>
+                                                        <rect key="frame" x="30" y="21" width="315" height="79"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-Ji-VgX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
@@ -1843,19 +1851,20 @@ SewSew You profile.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WI5-lf-i2R">
-                                <rect key="frame" x="0.0" y="608" width="375" height="170"/>
+                                <rect key="frame" x="0.0" y="648" width="375" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kUn-qz-TbX">
-                                        <rect key="frame" x="30" y="25" width="315" height="120"/>
+                                        <rect key="frame" x="30" y="20" width="315" height="90"/>
                                         <subviews>
                                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiW-oy-ZDV">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
+                                                <color key="backgroundColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="Db7-ED-CKj"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Db7-ED-CKj"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
                                                 <state key="normal" title="Sign Up">
-                                                    <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <state key="selected">
                                                     <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1865,13 +1874,13 @@ SewSew You profile.</string>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6O-2X-1QW">
-                                                <rect key="frame" x="0.0" y="65" width="315" height="55"/>
+                                                <rect key="frame" x="0.0" y="60" width="315" height="30"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fhm-Vb-0om">
-                                                        <rect key="frame" x="46" y="11" width="223" height="33"/>
+                                                        <rect key="frame" x="46" y="-1.3333333333333712" width="223" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhh-r1-XU5">
-                                                                <rect key="frame" x="0.0" y="6.333333333333373" width="180" height="20.666666666666671"/>
+                                                                <rect key="frame" x="0.0" y="6.0000000000000018" width="180" height="20.666666666666671"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="180" id="UzT-Qe-KR5"/>
                                                                 </constraints>
@@ -1885,6 +1894,9 @@ SewSew You profile.</string>
                                                                 <state key="normal" title="Login">
                                                                     <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="z6f-qc-94m" kind="push" id="GCU-mS-Y5G"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1893,7 +1905,7 @@ SewSew You profile.</string>
                                                 <constraints>
                                                     <constraint firstItem="Fhm-Vb-0om" firstAttribute="centerY" secondItem="m6O-2X-1QW" secondAttribute="centerY" id="852-sj-glS"/>
                                                     <constraint firstItem="Fhm-Vb-0om" firstAttribute="centerX" secondItem="m6O-2X-1QW" secondAttribute="centerX" id="gpW-dk-JS9"/>
-                                                    <constraint firstAttribute="height" constant="55" id="rOs-Oq-BZ7"/>
+                                                    <constraint firstAttribute="height" constant="30" id="rOs-Oq-BZ7"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1904,7 +1916,7 @@ SewSew You profile.</string>
                                     <constraint firstItem="kUn-qz-TbX" firstAttribute="centerY" secondItem="WI5-lf-i2R" secondAttribute="centerY" id="7M8-cc-3Tg"/>
                                     <constraint firstAttribute="trailing" secondItem="kUn-qz-TbX" secondAttribute="trailing" constant="30" id="MKo-5F-cYv"/>
                                     <constraint firstItem="kUn-qz-TbX" firstAttribute="leading" secondItem="WI5-lf-i2R" secondAttribute="leading" constant="30" id="eGY-U9-JSU"/>
-                                    <constraint firstAttribute="height" constant="170" id="k9B-QN-nlo"/>
+                                    <constraint firstAttribute="height" constant="130" id="k9B-QN-nlo"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1912,7 +1924,7 @@ SewSew You profile.</string>
                         <constraints>
                             <constraint firstItem="5gv-vM-bSz" firstAttribute="trailing" secondItem="WI5-lf-i2R" secondAttribute="trailing" id="F3b-52-T6E"/>
                             <constraint firstItem="DcT-qz-eXd" firstAttribute="leading" secondItem="5gv-vM-bSz" secondAttribute="leading" id="JbP-qm-Hud"/>
-                            <constraint firstItem="Mbk-vR-fMv" firstAttribute="top" secondItem="Vv9-I8-vul" secondAttribute="bottom" constant="10" id="LEQ-aR-IGG"/>
+                            <constraint firstItem="Mbk-vR-fMv" firstAttribute="top" secondItem="Vv9-I8-vul" secondAttribute="bottom" id="LEQ-aR-IGG"/>
                             <constraint firstItem="5gv-vM-bSz" firstAttribute="trailing" secondItem="Vv9-I8-vul" secondAttribute="trailing" id="TPg-If-V9u"/>
                             <constraint firstItem="Vv9-I8-vul" firstAttribute="leading" secondItem="5gv-vM-bSz" secondAttribute="leading" id="VWg-bQ-Ulr"/>
                             <constraint firstItem="Vv9-I8-vul" firstAttribute="top" secondItem="5gv-vM-bSz" secondAttribute="top" id="Wu7-gB-Pgo"/>
@@ -1928,6 +1940,7 @@ SewSew You profile.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5gv-vM-bSz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6V7-YP-MCi"/>
                     <connections>
                         <outlet property="btn_signup" destination="YiW-oy-ZDV" id="z4a-42-26e"/>
                         <outlet property="tf_confirm_password" destination="lBG-Ac-wkH" id="S5F-Px-0zp"/>
@@ -1938,7 +1951,7 @@ SewSew You profile.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5w-Ch-nl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="927"/>
+            <point key="canvasLocation" x="132" y="859"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="NKZ-Vo-x1k">
@@ -1958,8 +1971,11 @@ SewSew You profile.</string>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                         <state key="normal" title="Button" image="icon_arrow_left"/>
+                                        <connections>
+                                            <action selector="btn_backPressed:" destination="z6f-qc-94m" eventType="touchUpInside" id="EIp-y3-DeI"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-z9-F7F">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-z9-F7F">
                                         <rect key="frame" x="112.66666666666669" y="19" width="150" height="22.333333333333329"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="fAp-D5-BBT"/>
@@ -1993,7 +2009,7 @@ SewSew You profile.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-dZ-WAG">
-                                <rect key="frame" x="0.0" y="114" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the required details to start using the app" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="QpJ-sd-t6e">
                                         <rect key="frame" x="30" y="0.0" width="315" height="60"/>
@@ -2012,7 +2028,7 @@ SewSew You profile.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoF-wS-Z29">
-                                <rect key="frame" x="0.0" y="174" width="375" height="434"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="648"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8J-s6-s2D">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
@@ -2112,6 +2128,7 @@ SewSew You profile.</string>
                                         <constraints>
                                             <constraint firstItem="Gq1-7X-STQ" firstAttribute="top" secondItem="J8J-s6-s2D" secondAttribute="top" id="1i8-Ll-Tgj"/>
                                             <constraint firstItem="Gq1-7X-STQ" firstAttribute="leading" secondItem="J8J-s6-s2D" secondAttribute="leading" id="87E-eC-5XL"/>
+                                            <constraint firstAttribute="height" constant="217" id="BzL-0V-Wom"/>
                                             <constraint firstItem="Gq1-7X-STQ" firstAttribute="height" secondItem="J8J-s6-s2D" secondAttribute="height" multiplier="0.5" id="fuY-px-RpI"/>
                                             <constraint firstAttribute="bottom" secondItem="KH2-Mf-IlR" secondAttribute="bottom" id="hIJ-SZ-G0G"/>
                                             <constraint firstItem="KH2-Mf-IlR" firstAttribute="leading" secondItem="J8J-s6-s2D" secondAttribute="leading" id="lmx-2k-dA0"/>
@@ -2124,13 +2141,14 @@ SewSew You profile.</string>
                                         <rect key="frame" x="0.0" y="217" width="375" height="217"/>
                                         <subviews>
                                             <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-Uf-Va9">
-                                                <rect key="frame" x="30" y="30" width="315" height="55"/>
+                                                <rect key="frame" x="30" y="30" width="315" height="50"/>
+                                                <color key="backgroundColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="55" id="Xhi-UD-NX8"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Xhi-UD-NX8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Muli" family="Muli" pointSize="20"/>
                                                 <state key="normal" title="Login">
-                                                    <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <state key="selected">
                                                     <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2140,10 +2158,10 @@ SewSew You profile.</string>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="78a-u6-5Cr">
-                                                <rect key="frame" x="65.666666666666671" y="115" width="243.66666666666663" height="33"/>
+                                                <rect key="frame" x="65.666666666666671" y="110" width="243.66666666666663" height="33"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jk1-ih-kNC">
-                                                        <rect key="frame" x="0.0" y="6.333333333333373" width="180" height="20.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="6.3333333333333162" width="180" height="20.666666666666671"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="180" id="CIO-vT-zha"/>
                                                         </constraints>
@@ -2157,8 +2175,12 @@ SewSew You profile.</string>
                                                         <state key="normal" title="Sign Up">
                                                             <color key="titleColor" red="0.14117647059999999" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="Sc4-Wz-J0u" kind="push" id="CPR-lt-FVF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
+                                                <color key="backgroundColor" red="0.98755216599999995" green="0.26285848020000002" blue="0.03296157718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2167,6 +2189,7 @@ SewSew You profile.</string>
                                             <constraint firstItem="jjy-Uf-Va9" firstAttribute="top" secondItem="iz9-RP-asQ" secondAttribute="top" constant="30" id="D59-S6-pv9"/>
                                             <constraint firstItem="78a-u6-5Cr" firstAttribute="centerX" secondItem="jjy-Uf-Va9" secondAttribute="centerX" id="Kbe-vQ-8jm"/>
                                             <constraint firstAttribute="trailing" secondItem="jjy-Uf-Va9" secondAttribute="trailing" constant="30" id="MYQ-jX-n6w"/>
+                                            <constraint firstAttribute="height" constant="217" id="bl8-fy-2rB"/>
                                             <constraint firstItem="78a-u6-5Cr" firstAttribute="top" secondItem="jjy-Uf-Va9" secondAttribute="bottom" constant="30" id="eiB-hU-fyo"/>
                                         </constraints>
                                     </view>
@@ -2174,6 +2197,7 @@ SewSew You profile.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="iz9-RP-asQ" firstAttribute="leading" secondItem="EoF-wS-Z29" secondAttribute="leading" id="1TK-fn-DUy"/>
+                                    <constraint firstAttribute="height" constant="434" id="3fc-q7-8Fd"/>
                                     <constraint firstItem="J8J-s6-s2D" firstAttribute="height" secondItem="EoF-wS-Z29" secondAttribute="height" multiplier="0.5" id="52b-vz-dc9"/>
                                     <constraint firstItem="J8J-s6-s2D" firstAttribute="top" secondItem="EoF-wS-Z29" secondAttribute="top" id="JSp-48-mvT"/>
                                     <constraint firstAttribute="bottom" secondItem="iz9-RP-asQ" secondAttribute="bottom" id="VbT-LM-xKQ"/>
@@ -2182,6 +2206,13 @@ SewSew You profile.</string>
                                     <constraint firstAttribute="trailing" secondItem="J8J-s6-s2D" secondAttribute="trailing" id="eX1-If-bE3"/>
                                     <constraint firstItem="J8J-s6-s2D" firstAttribute="leading" secondItem="EoF-wS-Z29" secondAttribute="leading" id="sii-wv-kdl"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3fc-q7-8Fd"/>
+                                        <exclude reference="52b-vz-dc9"/>
+                                        <exclude reference="VbT-LM-xKQ"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-dF-rek">
                                 <rect key="frame" x="0.0" y="608" width="375" height="170"/>
@@ -2189,10 +2220,16 @@ SewSew You profile.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="M38-pn-szd"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="M38-pn-szd"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0uc-dF-rek" firstAttribute="top" secondItem="m9k-aS-yJc" secondAttribute="top" constant="608" id="07e-Pr-tdj"/>
                             <constraint firstItem="BoF-dZ-WAG" firstAttribute="leading" secondItem="Qhq-NJ-QQw" secondAttribute="leading" id="1G9-Zg-wNU"/>
                             <constraint firstItem="Qhq-NJ-QQw" firstAttribute="bottom" secondItem="0uc-dF-rek" secondAttribute="bottom" id="4kK-W0-0AV"/>
                             <constraint firstItem="0uc-dF-rek" firstAttribute="leading" secondItem="Qhq-NJ-QQw" secondAttribute="leading" id="8DV-QH-Ik3"/>
@@ -2206,11 +2243,18 @@ SewSew You profile.</string>
                             <constraint firstItem="fgg-1Z-GeW" firstAttribute="leading" secondItem="QpJ-sd-t6e" secondAttribute="leading" id="Sl9-ai-dlM"/>
                             <constraint firstItem="Qhq-NJ-QQw" firstAttribute="trailing" secondItem="EoF-wS-Z29" secondAttribute="trailing" id="WQh-Q7-tK7"/>
                             <constraint firstItem="Qhq-NJ-QQw" firstAttribute="trailing" secondItem="0uc-dF-rek" secondAttribute="trailing" id="kUL-yf-qHK"/>
-                            <constraint firstItem="BoF-dZ-WAG" firstAttribute="top" secondItem="Nd6-Ot-CZr" secondAttribute="bottom" constant="10" id="oOf-rv-ZuE"/>
+                            <constraint firstItem="BoF-dZ-WAG" firstAttribute="top" secondItem="Nd6-Ot-CZr" secondAttribute="bottom" id="oOf-rv-ZuE"/>
+                            <constraint firstAttribute="bottom" secondItem="EoF-wS-Z29" secondAttribute="bottom" id="teb-b4-0QG"/>
                             <constraint firstItem="EoF-wS-Z29" firstAttribute="top" secondItem="BoF-dZ-WAG" secondAttribute="bottom" id="ulh-3U-loa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qhq-NJ-QQw"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="C4e-7q-lf0"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="w6B-Dk-Eb1"/>
                     <connections>
                         <outlet property="tf_email" destination="HqO-NE-DWA" id="0Am-OU-xO3"/>
                         <outlet property="tf_password" destination="vsf-4b-qzt" id="gWA-ba-N4o"/>
@@ -2218,7 +2262,24 @@ SewSew You profile.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIs-ID-2c2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="-556"/>
+            <point key="canvasLocation" x="1898" y="859"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cmh-M2-K64">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9tw-Wl-vCS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kh0-ZT-1dj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="arA-2b-LFF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JC3-6v-Kbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.00492610837438"/>
         </scene>
     </scenes>
     <resources>
@@ -2231,4 +2292,8 @@ SewSew You profile.</string>
         <image name="side_view_image" width="1125" height="1821"/>
         <image name="snapshot" width="132" height="132"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eMR-os-coi"/>
+        <segue reference="Ldj-z7-pSH"/>
+    </inferredMetricsTieBreakers>
 </document>

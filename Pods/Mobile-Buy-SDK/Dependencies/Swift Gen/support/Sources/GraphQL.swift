@@ -157,16 +157,16 @@ public class GraphQL {
 			throw SchemaViolationError(type: type(of: self), field: fieldName, value: value)
 		}
 
-		internal func field(field: String, aliasSuffix: String? = nil) -> Any? {
-			var responseKey = field
-			if let aliasSuffix = aliasSuffix {
-				responseKey += "\(AbstractQuery.aliasSuffixSeparator)\(aliasSuffix)"
-			}
-			guard let keyIndex = objectMap.index(forKey: responseKey) else {
-				fatalError("field \(responseKey) wasn't queried")
-			}
-			return objectMap[keyIndex].1
-		}
+        internal func field(field: String, aliasSuffix: String? = nil) -> Any? {
+            var responseKey = field
+            if let aliasSuffix = aliasSuffix {
+                responseKey += "\(AbstractQuery.aliasSuffixSeparator)\(aliasSuffix)"
+            }
+            guard let keyIndex = objectMap.index(forKey: responseKey) else {
+                fatalError("field \(responseKey) wasn't queried")
+            }
+            return objectMap[keyIndex].1
+        }
 
 		public var debugDescription: String {
 			return "<\(type(of: self)): \(fields)>"
