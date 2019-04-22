@@ -22,8 +22,7 @@ class SideViewController: UIViewController {
     }
     @IBAction func btn_backPressed(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
-        
+self.navigationController?.popViewController(animated: true)
     }
     @IBAction func start_shooting(_ sender: UIButton) {
         

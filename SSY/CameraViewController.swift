@@ -34,8 +34,8 @@ class CameraViewController: UIViewController {
     */
     @IBAction func btn_backPressed(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
-        
+        self.navigationController?.popViewController(animated: true)
+
     }
     @IBAction func btn_selfie(_ sender: UIButton) {
 

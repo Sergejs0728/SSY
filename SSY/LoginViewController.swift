@@ -138,8 +138,6 @@ class LoginViewController: UIViewController {
         }
         task.resume()
         
-        
-        
     }
 
     

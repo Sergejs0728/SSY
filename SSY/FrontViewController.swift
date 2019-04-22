@@ -50,8 +50,8 @@ class FrontViewController: UIViewController, TGCameraDelegate {
     }
     @IBAction func btn_backPressed(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
-        
+        self.navigationController?.popViewController(animated: true)
+
     }
     @IBAction func btn_startShooting(_ sender: UIButton) {
 //        let camera = LuminaViewController()
